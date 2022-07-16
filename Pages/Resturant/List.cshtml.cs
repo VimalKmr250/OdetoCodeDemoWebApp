@@ -22,12 +22,18 @@ namespace OdetoCodeDemoWebApp.Pages.Resturant
         }
 
         public string Message { get; set; }
-        public IEnumerable<Resturants> resturants{ get; set; }
-        public void OnGet()
+        public IEnumerable<Resturants> resturants { get; set; }
+
+
+        [BindProperty(SupportsGet = true)]
+        public String searchBoxValue { get; set; }
+
+
+        public void OnGet( string searchBox)
         {
             Message = configuration["Message"];
 
-            resturants = resturantData.GetAll();
+            resturants = resturantData.GetResturantByName(searchBoxValue);
 
         }
     }

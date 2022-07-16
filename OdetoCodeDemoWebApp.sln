@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdetoCodeDemoWebApp", "OdetoCodeDemoWebApp.csproj", "{D12D1104-F1F8-4521-955A-DBACAFE650C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdetoCodeDemoWebApp", "OdetoCodeDemoWebApp.csproj", "{D12D1104-F1F8-4521-955A-DBACAFE650C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToCode.Food", "..\OdeToCode.Food\OdeToCode.Food.csproj", "{482D9949-D1AE-454B-A6C6-0757C673EB40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdeToCode.Food", "..\OdeToCode.Food\OdeToCode.Food.csproj", "{482D9949-D1AE-454B-A6C6-0757C673EB40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdetoCode.Data", "..\OdetoCode.Data\OdetoCode.Data.csproj", "{0EA34040-56D1-4EB1-AD8D-AEF0D0AB4D10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdetoCode.Data", "..\OdetoCode.Data\OdetoCode.Data.csproj", "{0EA34040-56D1-4EB1-AD8D-AEF0D0AB4D10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

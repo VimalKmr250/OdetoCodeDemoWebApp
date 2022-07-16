@@ -2,15 +2,34 @@
 @model OdetoCodeDemoWebApp.Pages.Resturant.ListModel
 @{
 }
-<h1>Resturants</h1>
+<h1>Resturantsa</h1>
 
 <table class="table">
+
+    <form method="get">
+
+        <div class="form-group">
+            <div class="input-group">
+                <input type="search" class="form-control"  asp-for="searchBoxValue" />
+                <span class="input-group-append">
+                    <button class="btn btn-default">
+                        <i class="fa fa-search"></i>                        
+                    </button>
+                </span>
+            </div>
+        </div>
+    </form>
 
     @foreach(var resturant in Model.resturants){
     <tr>
         <td>@resturant.Name</td>
         <td>@resturant.Location</td>
         <td>@resturant.CusineType</td>
+        <td>
+            <a class="btn btn-lg" asp-page="./Detail" asp-route-resturantID="@resturant.ID">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </a>
+        </td>
     </tr>
     }
 </table>

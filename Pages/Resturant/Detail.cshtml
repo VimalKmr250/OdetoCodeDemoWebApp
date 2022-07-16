@@ -1,0 +1,18 @@
+﻿@page "{resturantID}"
+@model OdetoCodeDemoWebApp.Pages.Resturant.DetailModel
+@{
+}
+
+
+<h2>@Model.Resturant.Name - @Model.Resturant.ID</h2>
+
+<div>
+    Location : @Model.Resturant.Location
+</div>
+<div>
+    Cusine: @Model.Resturant.CusineType 
+</div>
+
+
+<a asp-page="./List" class="btn btn-primary">All Resturant</a>
+
